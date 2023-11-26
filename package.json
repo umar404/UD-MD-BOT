@@ -25,16 +25,16 @@
         "MD",
         "baileys-md"
     ],
-    "homepage": "https://github.com/umar404/UD-MD BOT",
+    "homepage": "https://github.com/umar404/UD-MD-BOT",
     "author": {
         "name": "UMAR"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/umar404/UD-MD BOT.git"
+        "url": "git+https://github.com/umar404/UD-MD-BOT.git"
     },
     "bugs": {
-        "url": "https://github.com/umar404/UD-MD BOT/issues"
+        "url": "https://github.com/umar404/UD-MD-BOT/issues"
     },
     "license": "Apache License 2.0",
     "dependencies": {
