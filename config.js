@@ -7,16 +7,16 @@ import axios from 'axios'
 
 
 global.owner = [
-  ['917605902011', 'GURU', true],
-  ['6281255369012', 'Ash', true], 
+  ['923165123719', 'UMAR', true],
+  ['923475589080', 'UD', true], 
   [''] 
 ] //Number of owners
 
-//global.pairingNumber = "" //put your bot number here
+//global.pairingNumber = "923475589080" //put your bot number here
 
-global.mods = ['917605902011','32460248586'] 
-global.prems = ['917605902011', '32460248586', '919398758484']
-global.allowed = ['917605902011', '32460248586', '19152999993']
+global.mods = ['923165123719','923475589080'] 
+global.prems = ['923165123719', '923475589080', '923470555988']
+global.allowed = ['923165123719', '923475589080', '923470555988']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c71a2fb', '5bd33b276d41d6b4', 'HIRO', 'kurrxd09', 'ebb6251cc00f9c63']
@@ -50,18 +50,18 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.botname = 'ᴛʜᴇ ɢᴜʀᴜ-ʙᴏᴛ'
+global.botname = 'THE UMAR BOT'
 global.premium = 'true'
-global.packname = 'GURU┃ᴮᴼᵀ' 
-global.author = '@Asliguru' 
-global.menuvid = 'https://telegra.ph/file/085c4b1068f0f4f8db970.mp4'
-global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/asli_guru69\n' 
-global.dygp = 'https://chat.whatsapp.com/BibVE6tUICp3qOm2a1Ur8f'
-global.fgsc = 'https://github.com/Guru322/GURU-BOT' 
-global.fgyt = 'https://youtube.com/@Asliguru'
-global.fgpyp = 'https://youtube.com/@Asliguru'
-global.fglog = 'https://raw.githubusercontent.com/Guru322/api/Guru/guru.jpg' 
-global.thumb = fs.readFileSync('./Assets/Gurulogo.jpg')
+global.packname = 'UD-MD BOT' 
+global.author = 'IG = itz_umar_719' 
+global.menuvid = 'https://i.imgur.com/KRd67s7.jpg'
+global.igfg = '▢ Follow on Instagram\nhttps://www.instagram.com/itz_umar_719\n' 
+global.dygp = 'https://whatsapp.com/channel/0029VaEphvR3LdQbvGs4F50Z'
+global.fgsc = 'https://github.com/umar404/UD-MD-BOT' 
+global.fgyt = 'https://youtube.com/@DarkDevil404'
+global.fgpyp = 'https://youtube.com/@DarkDevil404'
+global.fglog = 'https://raw.githubusercontent.com/umar404/api/Umar/Umar.jpg' 
+global.thumb = fs.readFileSync('./Assets/Umarlogo.jpg')
 
 
 global.wait = '*⌛ _Charging..._*\n*▰▰▰▱▱▱▱▱*'
