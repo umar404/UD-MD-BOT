@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 let handler = async (m, { text, conn, usedPrefix, command }) => {
   if (!text && !(m.quoted && m.quoted.text)) {
-    throw `Please provide some text or quote a message to get a response.`;
+    throw `Hey Jawn Please provide some text or quote a message to get a response.`;
   }
 
   if (!text && m.quoted && m.quoted.text) {
@@ -12,16 +12,16 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
   try {
     m.react(rwait)
     const { key } = await conn.sendMessage(m.chat, {
-      image: { url: 'https://telegra.ph/file/c3f9e4124de1f31c1c6ae.jpg' },
-      caption: 'Thinking....'
+      image: { url: 'https://i.imgur.com/iuuUP5J.jpg' },
+      caption: 'Jawn Thinking....'
     }, {quoted: m})
     conn.sendPresenceUpdate('composing', m.chat);
     const prompt = encodeURIComponent(text);
 
-    const guru1 = `${gurubot}/chatgpt?text=${prompt}`;
+    const guru1 = `${umarbot}/chatgpt?text=${prompt}`;
     
     try {
-      let response = await fetch(guru1);
+      let response = await fetch(umar1);
       let data = await response.json();
       let result = data.result;
 
@@ -46,7 +46,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
   
       const model = 'llama';
       const senderNumber = m.sender.replace(/[^0-9]/g, ''); 
-      const session = `GURU_BOT_${senderNumber}`;
+      const session = `UD_MD_BOT_${senderNumber}`;
       const guru2 = `https://ultimetron.guruapi.tech/gpt3?prompt=${prompt}`;
       
       let response = await fetch(guru2);
