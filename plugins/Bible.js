@@ -9,7 +9,7 @@ let bibleChapterHandler = async (m, { conn }) => {
     let chapterInput = m.text.split(' ').slice(1).join('').trim();
 
     if (!chapterInput) {
-      throw new Error(`Please specify the chapter number or name. Example: -bible john 3:16`);
+      throw new Error(`Hey Jawn Please specify the chapter number or name. Example: -bible john 3:16`);
     }
 
     // Encode the chapterInput to handle special characters
@@ -29,7 +29,7 @@ let bibleChapterHandler = async (m, { conn }) => {
     let translatedChapterEnglish = await translate(chapterData.text, { to: 'en', autoCorrect: true });
 
     let bibleChapter = `
-📖 *The Holy Bible*\n
+📖 *The Holy Bible Codded By Umar Rehman*\n
 📜 *Chapter ${chapterData.reference}*\n
 Type: ${chapterData.translation_name}\n
 Number of verses: ${chapterData.verses.length}\n
