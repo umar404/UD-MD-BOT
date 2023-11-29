@@ -30,7 +30,7 @@ let handler = async (m, { conn, text, usedPrefix }) => {
 
     conn.sendFile(m.chat, result.images.jpg.image_url, 'error.jpg', AnimeInfo, m);
   } catch {
-    throw `*[❗] ERROR, please try again.*`;
+    throw `*[❗] AHH JAWN ERROR, jawn please try again.*`;
   }
 };
 
