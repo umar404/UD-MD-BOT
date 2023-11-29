@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text }) => {
-  if (!text) throw 'Please provide a word to search for.';
+  if (!text) throw 'Assalamualikum Jawn Please provide a word to search for.';
 
   const url = `https://api.urbandictionary.com/v0/define?term=${encodeURIComponent(text)}`;
 
@@ -9,11 +9,11 @@ let handler = async (m, { conn, text }) => {
   const json = await response.json();
 
   if (!response.ok) {
-    throw `An error occurred: ${json.message}`;
+    throw `Ahhhh Jawn An error occurred: ${json.message}`;
   }
 
   if (!json.list.length) {
-    throw 'Word not found in the dictionary.';
+    throw 'Jawn This Word not found in the dictionary.';
   }
 
   const firstEntry = json.list[0];
