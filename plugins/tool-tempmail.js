@@ -1,4 +1,4 @@
-//thanks to inrl:https://github.com/inrl-official
+//thanks to UMAR:https://github.com/umar404
 import fetch from 'node-fetch';
 
 let handler = async (m, { text, usedPrefix, command }) => {
@@ -12,15 +12,15 @@ let handler = async (m, { text, usedPrefix, command }) => {
         const replyMessage = `*Temporary Email Addresses:*\n\n${tempMails}\n\n use \`\`\`\.checkmail <mail-address>\`\`\`\ if you want to check inbox of any temp mail used from above`;
         m.reply(replyMessage);
       } else {
-        m.reply('No temporary email addresses found.');
+        m.reply('Jawn No temporary email addresses found.');
       }
     } catch (error) {
       console.error('Error:', error);
-      m.reply('Failed to fetch temporary email addresses.');
+      m.reply('Hey Jawn im So Sorry Failed to fetch temporary email addresses.');
     }
   } else if (command === 'checkmail') {
     if (!text && !(m.quoted && m.quoted.text)) {
-      m.reply('Please provide some text or quote a message to get a response.');
+      m.reply('Jawn Please provide some text or quote a message to get a response.');
       return;
     }
 
