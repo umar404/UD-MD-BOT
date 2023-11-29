@@ -6,9 +6,9 @@ let handler = async (m, { conn }) => {
     if (!res.ok) throw await res.text();
     let json = await res.json();
 
-    if (!json.courses || json.courses.length < 5) throw 'Not enough courses found';
+    if (!json.courses || json.courses.length < 5) throw 'Jawn Not enough courses found';
 
-    let courseData = '•───── ୨❀୧ ─────•\n';
+    let courseData = '•───── ୨UD-MD-BOT୧ ─────•\n';
 
     for(let i = 0; i < 5; i++) {
       let randomIndex = Math.floor(Math.random() * json.courses.length);
@@ -16,14 +16,14 @@ let handler = async (m, { conn }) => {
       // Remove the chosen course from the list so it's not chosen again
       json.courses.splice(randomIndex, 1);
 
-      courseData += `❖ Course: ${course.name}\n❖ Link: ${course.udemyLink}\n\n`;
+      courseData += `🤡 Course: ${course.name}\n🤡 Link: ${course.udemyLink}\n\n`;
     }
 
-    courseData += '•───── ୨❀୧ ─────•';
+    courseData += '•───── ୨UD-MD-BOT୧ ─────•';
 
     // Send the course data
     conn.reply(m.chat, courseData, m);
-    m.react('🤩');
+    m.react('😻');
   } catch (e) {
     console.error(e);
     m.react('error');
