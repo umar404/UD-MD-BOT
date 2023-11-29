@@ -17,18 +17,18 @@ let handler = async (m, { conn }) => {
     let newsItem = articles[randomArticleIndex];
 
     let newsInfo = `•───── ୨❀୧ ─────•
-    ❖ 𝑺𝑻𝑨𝑻𝑼𝑺: Active
-    ㋡ 𝑪𝑹𝑬𝑨𝑻𝑶𝑹: GURU
-    ☞ 𝑯𝑬𝑨𝑫𝑳𝑰𝑵𝑬: ${newsItem.headline}
+    ❖ Status  : Single i Mean Active
+    ㋡ CREATOR : UMAR REHMAN  
+    ☞ HEADLINE: ${newsItem.headline}
     ${newsItem.description}
-    🔗 𝑹𝑬𝑨𝑫 𝑴𝑶𝑹𝑬: ${newsItem.url}
+    🔗 JAWN SEE READ MORE: ${newsItem.url}
     •───── ୨❀୧ ─────•`;
 
     let thumbnail = 'https://yt3.ggpht.com/-L8AxmJwZuy8/AAAAAAAAAAI/AAAAAAAAAAA/eZRzS7tRVX0/s900-c-k-no/photo.jpg'; 
 
     conn.sendFile(m.chat, thumbnail, 'thumbnail.jpg', newsInfo, m);
 
-    m.react('✅'); 
+    m.react('😹'); 
   } catch (e) {
     console.error(e);
     m.react('❌'); 
