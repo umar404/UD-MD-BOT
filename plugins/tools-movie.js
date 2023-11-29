@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 let imdbHandler = async (m, { conn, text }) => {
-  if (!text) throw 'Please provide a movie title';
+  if (!text) throw 'Hey Jawn Please provide a movie title';
 
   try {
     let res = await fetch(`https://api.popcat.xyz/imdb?q=${encodeURIComponent(text)}`);
