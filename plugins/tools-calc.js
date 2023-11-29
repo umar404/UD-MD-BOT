@@ -26,8 +26,8 @@ let handler = async (m, { conn, text }) => {
     if (!result) throw result
     m.reply(`*${format}* = _${result}_`)
   } catch (e) {
-    if (e == undefined) throw '✳️ enter the equation\n\ncompatible symbols -, +, *, /, ×, ÷, π, e, (, )'
-    throw 'Incorrect format, only 0-9 and symbol -, +, *, /, ×, ÷, π, e, (, ) what can you use'
+    if (e == undefined) throw '👻 Hey Jawn enter the equation\n\ncompatible symbols -, +, *, /, ×, ÷, π, e, (, )'
+    throw 'Jawn Im Sorry Incorrect format, only 0-9 and symbol -, +, *, /, ×, ÷, π, e, (, ) what can you use'
   }
 }
 handler.help = ['cal <equation>']
