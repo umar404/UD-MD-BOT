@@ -5,12 +5,12 @@ import { xnxxSearch, xnxxdl } from '../lib/scraper.js';
 
 let handler = async (m, { conn, args, text, usedPrefix, command }) => {
   let chat = global.db.data.chats[m.chat];
-  if (!chat.nsfw) throw `🚫 This group does not support NSFW content.\n\nTo turn it on, use: *${usedPrefix}enable* nsfw`;
+  if (!chat.nsfw) throw `🚫 Hey Ghashti Maa K Bache x Muthal This group does not support NSFW content.\n\nTo turn it on, use: *${usedPrefix}enable* nsfw`;
   let user = global.db.data.users[m.sender].age;
-  if (user < 18) throw `❎ You must be 18 years or older to use this feature.`;
-  if (!text) throw `✳️ What do you want to search?\n📌 Usage: *${usedPrefix + command} <search>*\n\nExample: Hot desi bhabi or you can use a link as well\nExample: .xnxx link *`;
+  if (user < 18) throw `😒 Oye Chote Lund Walle You must be 18 years or older to use this feature.`;
+  if (!text) throw `✳ 🤔 Ghasti K Bache What do you want to search?\n📌 Usage: *${usedPrefix + command} <search>*\n\nExample: Hot desi Sameers bhabi or you can use a link as well And Your Sis Mia Khalifa Name \nExample: .xnxx link *`;
 
-  m.react('⌛');
+  m.react('🍌');
 
   let url;
   try {
@@ -30,13 +30,13 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
           'Here is your video',
           m
         );
-        m.react('✅');
+        m.react('😽');
       } else {
-        m.reply('🔴 Error: Failed to retrieve the download URL.');
+        m.reply('🔴 Error: Gandu Failed to retrieve the download URL.');
       }
     } catch (e) {
       console.error(e);
-      m.reply('🔴 Error: We encountered a problem while processing the request.');
+      m.reply('🔴 Error: Gandu We encountered a problem while processing the request.');
     }
   } else {
     try {
@@ -49,11 +49,11 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
           },
         });
       } else {
-        m.reply('🔴 Error: No search results found.');
+        m.reply('🔴 Error:Ghashti K Bache  No search results found.');
       }
     } catch (e) {
       console.error(e);
-      m.reply('🔴 Error: We encountered a problem while processing the request.');
+      m.reply('🔴 Error: Randi K Bache We encountered a problem while processing the request.');
     }
   }
 };
