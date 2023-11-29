@@ -23,7 +23,7 @@ let handler = async (m, { conn }) => {
     console.log("API Response:", result);
 
     if (!result || result.error || result.result.length === 0) {
-      throw "*Error: Could not track the anime.*";
+      throw "*Jawn Still Error: jawn I Could not track the anime.*";
     }
 
     let { anilist, from, to, similarity, video, episode } = result.result[0];
@@ -55,7 +55,7 @@ let handler = async (m, { conn }) => {
     await conn.sendFile(m.chat, video, 'anime.mp4', message, m);
   } catch (error) {
     console.error("Error:", error);
-    m.reply("*Error: Could not track the anime or send the video.*");
+    m.reply("*Hey Jawn Error: Sorry Jawn I Could not track the anime or send the video.*");
   }
 };
 
