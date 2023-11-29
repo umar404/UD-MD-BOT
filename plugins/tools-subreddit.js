@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 let subredditHandler = async (m, { conn, text }) => {
-  if (!text) throw 'Please provide a subreddit name';
+  if (!text) throw 'Jawn Please provide a subreddit name';
 
   try {
     let res = await fetch(`https://api.popcat.xyz/subreddit/${encodeURIComponent(text)}`);
