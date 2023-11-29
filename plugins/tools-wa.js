@@ -7,14 +7,14 @@ let handler = async (m, { conn, usedPrefix, text, command }) => {
   } else if (m.mentionedJid && m.mentionedJid[0]) {
     waLin = m.mentionedJid[0].replace(/[^0-9]/g, '');
   } else {
-    throw `Please provide a number, quote a user, or mention a user`;
+    throw `Assalamualikum Jawn Please provide a number, quote a user, or mention a user`;
   }
   const waLink = `https://wa.me/${waLin}`;
-  const message = `*WhatsApp Link:*\n${waLink}`;
+  const message = `*WhatsApp Link By Umar:*\n${waLink}`;
 
   conn.sendMessage(m.chat, { text: message, quoted: m, contextInfo: { mentionedJid: [m.sender] } });
 
-  m.react('✅');
+  m.react('😽');
 }
 
 handler.help = ['wa'];
