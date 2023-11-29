@@ -11,7 +11,7 @@ const handler = async (m, { conn, text }) => {
     const q = m.quoted ? m.quoted : m;
     const mime = (q.msg || q).mimetype || '';
     const img = await q.download();
-    const apikey = process.env.REMOVEBG_KEY; // Use the API_KEY from the environment variable
+    const apikey = process.env.REMOVEBG_KEY; ('yGWBMLbvqcVzKsfFug8ikvRV')// Use the API_KEY from the environment variable
 
     const formData = new FormData();
     formData.append('size', 'auto');
@@ -39,7 +39,7 @@ const handler = async (m, { conn, text }) => {
     conn.sendFile(m.chat, 'no-bg.png', '', caption, m);
   } catch (e) {
     console.error(e);
-    m.reply('Sorry, an error occurred while processing the image, maybe check your api key.');
+    m.reply('Hi Jawn Im So Sorry, an error occurred while processing the image, maybe check your api key.');
   }
 };
 
