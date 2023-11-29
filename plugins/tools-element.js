@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 
 let elementHandler = async (m, { conn, text }) => {
-  if (!text) throw 'Please provide an element symbol or name';
+  if (!text) throw 'Hey Jawn Please provide an element symbol or name';
 
   try {
     let res = await fetch(`https://api.popcat.xyz/periodic-table?element=${text}`);
@@ -16,7 +16,7 @@ let elementHandler = async (m, { conn, text }) => {
     console.log('JSON response:', json);
 
     let elementInfo = 
-    `*Element Information:*\n
+    `*Element Information By Umar Rehman:*\n
      • *Name:* ${json.name}\n
      • *Symbol:* ${json.symbol}\n
      • *Atomic Number:* ${json.atomic_number}\n
