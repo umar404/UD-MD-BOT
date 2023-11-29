@@ -16,7 +16,7 @@ let handler = async (m, { text }) => {
 
 ${resulw}`)
 } catch (e) {
-  m.reply('😒 Im So Sorru Jawn No results found ')
+  m.reply('😒 Im So Sorry Jawn No results found ')
 }
 }
 handler.help = ['wikipedia']
