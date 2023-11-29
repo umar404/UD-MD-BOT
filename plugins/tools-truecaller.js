@@ -1,5 +1,5 @@
-//GURU ka maal hai
-//https://github.com/Guru322/GURU-BOT
+//GDARK DEVIL 
+//https://github.com/umar404/UD-MD-BOT
 
 import fetch from 'node-fetch';
 
@@ -12,7 +12,7 @@ let handler = async (m, { conn, text }) => {
   } else if (m.mentionedJid && m.mentionedJid[0]) {
     phoneNumber = m.mentionedJid[0].replace(/[^0-9]/g, '');
   } else {
-    throw `Please provide a number in international format without +, quote a user, or mention a user`;
+    throw `Assalamualaikum Jawn Please provide a number in international format without +, quote a user, or mention a user`;
   }
 
   try {
@@ -23,7 +23,7 @@ let handler = async (m, { conn, text }) => {
     console.log(response);
     let json = await response.json();
 
-    json.creator = 'GURU';
+    json.creator = 'UMAR';
 
     let milf = '';
     for (let prop in json) {
