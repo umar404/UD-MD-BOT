@@ -9,7 +9,7 @@ let handler = async (m, { text, usedPrefix, command, __dirname }) => {
 ✳️ user  : ${usedPrefix + command} <name file>
 
 📌 Example:
-        ${usedPrefix}getfile main.js
+        ${usedPrefix}getfile Umar.js
         ${usedPrefix}getplugin owner
 `.trim()
     if (/p(lugin)?/i.test(command)) {
@@ -24,7 +24,7 @@ let handler = async (m, { text, usedPrefix, command, __dirname }) => {
         })
         if (error) {
             await m.reply(`
-❎ bug found in  *${filename}*:
+❎ Jawn bug found in  *${filename}*:
 
 ${error}
 
@@ -43,7 +43,7 @@ ${error}
             })
             if (error) {
                 await m.reply(`
-❎ bug found in *${text}*:
+❎ Jawn bug found in *${text}*:
 
 ${error}
 
