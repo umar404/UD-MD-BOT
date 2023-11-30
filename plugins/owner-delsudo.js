@@ -5,12 +5,12 @@ let handler = async (m, { conn, text }) => {
     } else {
         who = m.chat;
     }
-    if (!who) throw 'Tag the person you want to remove as an Owner!';
+    if (!who) throw 'Assalamualikum Jawn Tag the person you want to remove as an Owner!';
     
     const ownerId = who.split('@')[0];
     const ownerIndex = global.owner.findIndex(owner => owner[0] === ownerId);
     
-    if (ownerIndex === -1) throw 'This person is not an owner!';
+    if (ownerIndex === -1) throw 'Jawn This person is not an owner!';
     
     const removedOwner = global.owner.splice(ownerIndex, 1)[0];
     const caption = `@${removedOwner[0]} has been removed as an Owner.`;
