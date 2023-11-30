@@ -3,7 +3,7 @@ import fg from 'api-dylux'
 import fetch from 'node-fetch'
 import { sticker } from '../lib/sticker.js'
 let handler = async (m, { conn, args, text, usedPrefix, command }) => {
-    if (!args[0]) throw `✳️ enter what you want to search \n\n📌*Example:*\n${usedPrefix + command} homero`
+    if (!args[0]) throw `Hey Mah Jawn Enter What You Want To Search \n\n👻*Example:*\n${usedPrefix + command} homero`
     
     //Result https://getstickerpack.com/
     try {
@@ -11,7 +11,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
    let json = await res.json()*/
    let json = await fg.StickerSearch(text) 
     m.reply(`
-✅ Result
+😹 Result By Umar
 
 ▢ *Title:* ${json.title}
 ▢ *Total stickers:* ${json.sticker_url.length}
@@ -22,7 +22,7 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
         //await delay(1500)
     }
     } catch (e) {
-	m.reply(`❇️ Error: try another`)
+	m.reply(`❇️ Error: Jawn try another`)
 	} 
 }
 handler.help = ['getsticker']
