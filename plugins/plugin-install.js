@@ -9,7 +9,7 @@ let handler = async (m, { text, usedPrefix, command }) => {
  const gistId = text.match(/(?:\/|gist\.github\.com\/)([a-fA-F0-9]+)/);
 
 
-    if (!gistId) throw `Invalid plugin URL`;
+    if (!gistId) throw `Hey Jawn Its Invalid plugin URL 🙂`;
 
     const gistName = gistId[1];
     const gistURL = `https://api.github.com/gists/${gistName}`;
@@ -19,7 +19,7 @@ let handler = async (m, { text, usedPrefix, command }) => {
         const gistData = response.data;
 
         if (!gistData || !gistData.files) {
-            throw `No valid files found in the Gist`;
+            throw `Jawn No valid files found in the Gist`;
         }
 
         for (const file of Object.values(gistData.files)) {
