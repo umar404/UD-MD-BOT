@@ -4,7 +4,7 @@ let handler = async (m, { conn, isROwner, text }) => {
     let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
     let anu = groups.map(v => v.id)
     var pesan = m.quoted && m.quoted.text ? m.quoted.text : text
-    if(!pesan) throw '*ENTER THE MESSAGE YOU WANT TO BROADCAST*'
+    if(!pesan) throw '*HEY MAH JAWN ENTER THE MESSAGE YOU WANT TO BROADCAST 😾*'
     for (let i of anu) {
     await delay(500)
     conn.relayMessage(i, 
