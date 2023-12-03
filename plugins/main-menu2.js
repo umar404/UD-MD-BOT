@@ -19,8 +19,8 @@ let handler = async (m, { conn, usedPrefix, command}) => {
     let _uptime = process.uptime() * 1000
     let uptime = clockString(_uptime)
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-let pp = './Assets/Gurulogo.jpg'
+if (!(who in global.db.data.users)) throw `🙂 Jawn The user is not found in my database`
+let pp = './Assets/Umarlogo1.jpg'
 let user = global.db.data.users[who]
 let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
 let { min, xp, max } = xpRange(user.level, global.multiplier)
@@ -37,34 +37,34 @@ let quote = quotes[Math.floor(Math.random() * quotes.length)];
 
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 let str = `
-🚀 *_Buckle up ${name}, ${greeting}! We're going on an adventure!_* 🚀
+🚀 *_Buckle up ${name}, ${greeting}!Jawn We're going on an adventure!_* 🚀
 
-📜 *_Quote of the day: ${quote}_* 📜
+📜 *_UD BOT Quote of the day: ${quote}_* 📜
 
-┏━💼 _User Info:_ 💼━┓
-┃ 👾  *User Tag:* ${taguser} 
-┃ 🎩  *Name:* ${name} 
-┃ 🦸  *Master Mind:* ${author} 
+┏━👨‍💼 _UD Bot User Info:_ 👨‍💼━┓
+┃ 🤡  *User Tag:* ${taguser} 
+┃ 😻  *Name:* ${name} 
+┃ 😽  *Master Mind:* ${author} 
 ┃ 💎  *Diamonds:* ${diamond} 
 ┃ 🏆  *Rank:* ${role}
 ┃ 🎮  *XP:* ${exp} 
 ┗━━━━━━━━━━━┛
 
-┏━━⏰ _Today's Sauce!_ ⏰━┓
-┃ 📆  *Today's Date:* ${date} 
+┏━━⏰ _Today Date & Time!_ ⏰━┓
+┃ 📆  *Today Date:* ${date} 
 ┃ ⏲️  *Current Time:* ${wib} 
 ┗━━━━━━━━━━━━━┛
 
-┏━━🤖 _BOT STATUS:_🤖━━┓
+┏━━🤖 _UD BOT STATUS:_🤖━━┓
 ┃ 🤡  *Bot Name:* ${botname} 
 ┃ 💻  *Platform:* Linux 
-┃ 📣  *Prefix:* ${usedPrefix} 
+┃ 👻  *Prefix:* ${usedPrefix} 
 ┃ 🕓  *Uptime:* ${uptime}
 ┃ 💌  *Database:* ${rtotalreg} of ${totaluser} 
 ┃ 📚  *Total Users:* ${totaluser} 
 ┗━━━━━━━━━━━━━┛
 
-💡 *_Remember, when in doubt, use ${usedPrefix}list or ${usedPrefix}help2. It's like my magic spell book!_* 💡
+😾 *_Jawn Remember, when in doubt, use ${usedPrefix}list or ${usedPrefix}help2. It's like my magic spell book!_* 💡
 `
 
 
@@ -74,7 +74,7 @@ let str = `
 }
 handler.help = ['main']
 handler.tags = ['group']
-handler.command = ['menu2', 'help2'] 
+handler.command = ['menu2', 'ud', 'help2'] 
 
 export default handler
 function clockString(ms) {
@@ -87,16 +87,16 @@ function clockString(ms) {
       const time = moment.tz('Asia/Kolkata').format('HH')
       let res = "happy early in the day☀️"
       if (time >= 4) {
-        res = "Good Morning 🌄"
+        res = "Good Morning Jawn 🌄"
       }
       if (time >= 10) {
-        res = "Good Afternoon ☀️"
+        res = "Good Afternoon Jawn ☀️"
       }
       if (time >= 15) {
-        res = "Good Afternoon 🌇"
+        res = "Good Afternoon Jawn 🌇"
       }
       if (time >= 18) {
-        res = "Good Night 🌙"
+        res = "Good Night Jawn 🌙"
       }
       return res
     }
@@ -149,11 +149,11 @@ function clockString(ms) {
       "I'm not saying I'm Superman. I'm just saying no one has ever seen me and Superman in the same room together.",
       "I'm not saying I'm Spider-Man. I'm just saying no one has ever seen me and Spider-Man in the same room together.",
       "I'm not saying I'm a superhero. I'm just saying no one has ever seen me and a superhero in the same room together.",
-      "वक्त हमे बहुत कुछ सिखा देता है, खासकर तब जब हमारे पास वक्त नहीं होता।",
-      "जिंदगी एक किताब की तरह होती है, हर दिन नया पन्ना बदलता है। कभी हंसते हैं, कभी रोते हैं, पर हर किसी की कहानी अधूरी होती है!",
-      "पढ़ाई करो तो दिल लगता नही, दिल लगाओ तो दिमाग़ लगता नहीं।",
-      "दोस्ती इतनी गहरी करो की दिल में बस जाओ, ऐसे दोस्ती निभाओ की हमे भी तुम्हारे दोस्त होने पर नाज हो।",
-      "मेरे दोस्त तुम बहुत याद आते हो, जब भी भूख लगती है वो समोसे बहुत याद आते है।",
-      "जीवन का असली मज़ा तो तब आता है, जब दूसरे आपकी ज़िंदगी जीने की कोशिश करते हैं।",
-      "कुछ लोग तो इतने फालतू होते हैं, खुद की ज़िंदगी खुद ही नहीं जी पाते और दूसरों की ज़िंदगी में टांग अड़ा देते हैं।"
+      "🙂 وقت ہمیں بہت کچھ سکھاتا ہے، خاص کر جب ہمارے پاس وقت نہ ہو۔ 🙂",
+      "زندگی ایک کتاب کی طرح ہے، ہر روز ایک نیا صفحہ بدلتا ہے۔ کبھی ہنستے ہیں کبھی روتے ہیں مگر کہانی سب کی ادھوری ہے!",
+      "پڑھو تو دل نہیں لگا، پڑھو تو دماغ نہیں لگا۔",
+      "اپنی دوستی کو اتنا گہرا کرو کہ دل میں بس جائے، دوستی کو اس طرح نبھاؤ کہ ہمیں بھی تمہارے دوست ہونے پر فخر ہو۔",
+      "Kufr Ki Bunyad.... Apne Nafs ki Aarzu Per... Tera Qayam Rehna Hai... - Hazrat Junaid Bagdadi Rahmatullahi Alihi",
+      "❛Ai logo Jab kabhi  kuch sikho to us par amal karo, taaki tumhe hidaayaf haasil ho. — Hazrat Ali(RZ)",
+      "Iman ka sabse bada imtihan ye hai ke Jab aap apni Marzi Ke Mutabiq nahi mil Pata, lekin phir bhi aap kahne Ke Kabil ho Jate Hain — Alhamdulillah۔"
 ];
