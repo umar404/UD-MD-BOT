@@ -18,7 +18,7 @@ import {
   「 ${botname} あ⁩ 」\n
   *%ucpn*
  
- 乂───『 *U S E R*』───乂
+ 乂───『 *U D  U S E R*』───乂
  ⛥ *Name:* %name
   ⛥ *Gold:* %credit
   ⛥ *Role:* %role
@@ -27,7 +27,7 @@ import {
   ⛥ *Total Xp:* %totalexp
   ╰──────────⳹
  
-  乂───『 *I N F O*』───乂
+  乂───『 *U D  I N F O*』───乂
   ⛥ *Bot Name:* ${botname}
   ⛥ *Mode:* %mode
   ⛥ *Platform:* %platform
@@ -38,7 +38,7 @@ import {
   ⛥ *Database:*  %totalreg
   ╰──────────⳹
   
-  乂───『 *I N F O  C M D*』───乂 
+  乂───『 *U D  I N F O  C M D*』───乂 
   │ *%totalfeatures* Commands
   ╰──────────⳹
  %readmore
@@ -56,7 +56,7 @@ import {
  }) => {
   await conn.sendMessage(m.chat, {
    react: {
- text: "⏳",
+ text: "😽",
  key: m.key,
    }
   })
@@ -179,10 +179,10 @@ import {
  readmore: readMore
    }
    text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, "g"), (_, name) => "" + replace[name])
-   const pp = './Assets/Gurulogo.jpg'
+   const pp = './Assets/Umarlogo1.jpg'
   
  
- let contact = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
+ let contact = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '923165123719@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
  
   conn.sendMessage(m.chat, { video: { url: menuvid }, caption: text.trim(),  gifPlayback: true,
   gifAttribution: 0}, { quoted: contact })
@@ -225,18 +225,18 @@ import {
  
  function ucapan() {
   const time = moment.tz("Asia/Kolkata").format("HH")
-  let res = "Good morning ☀️"
+  let res = "Good morning Jawn ☀️"
   if (time >= 4) {
-   res = "Good Morning 🌄"
+   res = "Good Morning Jawn 🌄"
   }
   if (time >= 10) {
-   res = "Good Afternoon ☀️"
+   res = "Good Afternoon Jawn ☀️"
   }
   if (time >= 15) {
-   res = "Good Afternoon 🌇"
+   res = "Good Afternoon Jawn 🌇"
   }
   if (time >= 18) {
-   res = "Good Night 🌙"
+   res = "Good Night Jawn 🌙"
   }
   return res
  }
