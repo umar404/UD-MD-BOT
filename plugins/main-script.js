@@ -3,7 +3,7 @@ import { join } from 'path';
 import axios from 'axios'; 
 
 let handler = async function (m, { conn, __dirname }) {
-  const githubRepoURL = 'https://github.com/Guru322/GURU-BOT';
+  const githubRepoURL = 'https://github.com/umar404/UD-MD-BOT';
 
   try {
   
@@ -27,7 +27,7 @@ let handler = async function (m, { conn, __dirname }) {
       // Send the formatted information as a message
       await conn.relayMessage(m.chat,  {
         requestPaymentMessage: {
-          currencyCodeIso4217: 'INR',
+          currencyCodeIso4217: 'PKR',
           amount1000: 69000,
           requestFrom: m.sender,
           noteMessage: {
@@ -49,6 +49,6 @@ let handler = async function (m, { conn, __dirname }) {
 
 handler.help = ['script'];
 handler.tags = ['main'];
-handler.command = ['sc', 'repo', 'script'];
+handler.command = ['sc', 'repo', 'git', 'script'];
 
 export default handler;
