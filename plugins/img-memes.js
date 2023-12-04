@@ -12,16 +12,16 @@ const handler = async (m, { conn, usedPrefix, command }) => {
 
     
     conn.sendFile(m.chat, imageUrl, 'meme.jpg', title, m);
-    m.react('😆');
+    m.react('😽');
   } catch (error) {
     console.error(error);
-    m.reply('Sorry, an error occurred while fetching the meme.');
+    m.reply('Jawn Sorry, an error occurred while fetching the meme.');
   }
 };
 
 handler.help = ['meme'];
 handler.tags = ['fun'];
-handler.command = ['meme', 'memes'];
+handler.command = ['meme','udmeme', 'memes'];
 handler.diamond = false;
 
 export default handler;
