@@ -5,7 +5,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     }[(args[0] || '')]
     if (isClose === undefined)
         throw `
-*✳️ choose an option:*
+*🤡 Jawn You Can Choose an Option:*
   *▢ ${usedPrefix + command} close*
   *▢ ${usedPrefix + command} open*
 `.trim()
@@ -13,7 +13,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 }
 handler.help = ['group *open/close*']
 handler.tags = ['group']
-handler.command = ['group', 'grupo'] 
+handler.command = ['group', 'gcoff'] 
 handler.admin = true
 handler.botAdmin = true
 
