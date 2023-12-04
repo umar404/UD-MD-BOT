@@ -4,27 +4,27 @@ let handler = async(m, { conn, text, usedPrefix, command }) => {
 
     // Sound
     let name = m.pushName || conn.getName(m.sender)
-    var vn = "https://raw.githubusercontent.com/Kai0071/A17/master/Assets/audio/🔥.mp3"
-    let url = "https://github.com/Guru322/GURU-BOT"
+    var vn = "https://raw.githubusercontent.com/umar404/UD-MD-BOT/master/Assets/mp3/Umar.mp3"
+    let url = "https://github.com/umar404/UD-MD-BOT"
     let murl = "https://youtu.be/DibiLc17dh0?si=xp9bQ-_frEyDB1-i"
-    let img = "https://cdn.wallpapersafari.com/71/19/7ZfcpT.png"
+    let img = "https://i.imgur.com/YTrRVkv.jpeg"
     let con = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
     let doc = {
         audio: {
           url: vn
         },
-        mimetype: 'audio/mp4',
+        mimetype: 'Assets/mp3/Umar.mp3',
         ptt: true,
         waveform:  [100, 0, 100, 0, 100, 0, 100],
-        fileName: "Guru",
+        fileName: "Umar",
     
         contextInfo: {
           mentionedJid: [m.sender],
           externalAdReply: {
-          title: "I AM ALIVE",
-          body: "GURU BOT",
+          title: "JAWN I AM ALIVE",
+          body: "UMAR BOT",
           thumbnailUrl: img,
-          sourceUrl: 'https://chat.whatsapp.com/F3sB3pR3tClBvVmlIkqDJp',
+          sourceUrl: 'https://wa.me/923165123719',
           mediaType: 1,
           renderLargerThumbnail: true
           }}
