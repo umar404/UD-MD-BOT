@@ -2,16 +2,16 @@
 let handler = async (m, { conn, usedPrefix, command, args: [event], text }) => {
 
   let chat = global.db.data.chats[m.chat]
-  if (!chat.welcome) throw `✳️ To use this command you must activate the Welcomes with *${usedPrefix}on* welcome`
+  if (!chat.welcome) throw `🤡 Jawn To use this command you must activate the UD-MD-BOT Welcomes with *${usedPrefix}on* welcome`
   let te = `
-  ┌─⊷ *EVENTS*
-  ▢ welcome
-  ▢ bye
-  ▢ promote
-  ▢ demote
+  ┌─⊷ *UD BOT EVENTS*
+  😽 welcome
+  😽 bye
+  😽 promote
+  😽 demote
   └───────────
   
-  📌 Example :
+  🥵 Example :
   
   *${usedPrefix + command}* welcome @user`
 
@@ -21,7 +21,7 @@ let mentions = text.replace(event, '').trimStart()
 let who = mentions ? conn.parseMention(mentions) : []
 let part = who.length ? who : [m.sender]
 let act = false
-m.reply(`✅ simulating ${event}...`)
+m.reply(`😽 Jawn Simulating ${event}...`)
 switch (event.toLowerCase()) {
         case 'add':
         case 'bienvenida':
@@ -58,7 +58,7 @@ action: act
 }
 handler.help = ['simulate <event> @user']
 handler.tags = ['group']
-handler.command = ['simular', 'simulate'] 
+handler.command = ['simular','udwc', 'simulate'] 
 handler.admin = true
 handler.group = true
 
