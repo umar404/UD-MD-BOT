@@ -41,44 +41,44 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   let neww = performance.now()
   let speed = neww - old
   let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './Guru.jpg')
+if (!(who in global.db.data.users)) throw `🙂 Jawn The user is not found in my database`
+let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './Umar.jpg')
 let user = global.db.data.users[who]
   
 let infobt = `
-≡ *INFO BOT*
+🤡 *😻 UD INFO BOT 😽*
   
 *STATE*
-▢ *${groupsIn.length}* GROUP CHATS
-▢ *${groupsIn.length}* united groups
-▢ *${groupsIn.length - groupsIn.length}* abandoned groups
-▢ *${chats.length - groupsIn.length}* private chats
-▢ *${chats.length}* Total Chats
+😻 *${groupsIn.length}* GROUP CHATS
+😻 *${groupsIn.length}* United Groups
+😻 *${groupsIn.length - groupsIn.length}* Abandoned Groups
+😻 *${chats.length - groupsIn.length}* Private Chats
+😻 *${chats.length}* Total Chats
 
-*≡ OWNER*
-  *GURU*
-▢ Instagram :
-  • https://instagram.com/asli_guru69
-▢ GitHub :
-  • https://github.com/Guru322
-▢ Telegram : 
-  • t.me/i_want_to_be_isekaied (GURU) 
-▢ YouTube : 
-  • https://youtube.com/@Asliguru
+*🤡 UD BOT OWNER*
+  *UMAR*
+😻 Instagram :
+  • https://instagram.com/itz_umar_719
+😻 GitHub :
+  • https://github.com/umar404
+😻 Telegram : 
+  • t.me/@darkdevil719 (U M A R) 
+😻 YouTube : 
+  • https://youtube.com/@DarkDevil404
 
- *≡ S E R V E R*
+ *🤡 U D  S E R V E R*
 *🛑 RAM:* ${format(totalmem() - freemem())} / ${format(totalmem())}
 *🔵 FreeRAM:* ${format(freemem())}
 
-*≡  NodeJS memory *
+*🤡  NodeJS Memory *
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
 `
 conn.sendFile(m.chat, pp, 'prefil.jpg', infobt, m, false, { mentions: [who] })
-m.react(done)
+m.react(😽)
 
 }
 handler.help = ['info']
 handler.tags = ['main']
-handler.command = ['info', 'infobot', 'botinfo']
+handler.command = ['info', 'infobot', 'udinfo', 'botinfo']
 
 export default handler
