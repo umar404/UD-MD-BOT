@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix, command}) => {
 
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './Guru.jpg')
+let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './Umar.jpg')
 let user = global.db.data.users[who]
 let about = (await conn.fetchStatus(who).catch(console.error) || {}).status || ''
 let { name, exp, credit, lastclaim, registered, regTime, age, level, role, wealth, warn } = global.db.data.users[who]
@@ -24,7 +24,7 @@ let str = `*🪪 Name:* ${username}${about ? '\n\n 🎌 *Bio:* ' + about : ''}
 
 *✨ Level* : ${level}
 
-*⬆️ XP* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `Ready for *${usedPrefix}levelup*` : `*${math}xp* missing to level up`}
+*⬆️ XP* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `Jawn Are You Ready for *${usedPrefix}levelup*` : `*${math}xp* missing to level up`}
 
 *🏆 Rank:* ${role}
 
