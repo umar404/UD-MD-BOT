@@ -1,4 +1,4 @@
-mport fetch from 'node-fetch';
+import fetch from 'node-fetch';
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   const name = conn.getName(m.sender);
