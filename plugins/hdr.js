@@ -9,21 +9,21 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				let q = m.quoted ? m.quoted : m;
 				let mime = (q.msg || q).mimetype || q.mediaType || "";
 				if (!mime)
-					throw `photo?`;
+					throw `😻 Jawn Sent The Photo?`;
 				if (!/image\/(jpe?g|png)/.test(mime))
-					throw `Mime ${mime} tidak support`;
+					throw `Pic ${mime} Not Supported`;
 				else conn.enhancer[m.sender] = true;
 				m.reply(wait);
 				let img = await q.download?.();
 				let error;
 				try {
 					const This = await processing(img, "dehaze");
-					conn.sendFile(m.chat, This, "", "Nih...", m);
+					conn.sendFile(m.chat, This, "", "Jawn Here Is Your Order 😽😹", m);
 				} catch (er) {
 					error = true;
 				} finally {
 					if (error) {
-						m.reply("Proses Gagal :(");
+						m.reply("WTF Process Failed 🥲 :(");
 					}
 					delete conn.enhancer[m.sender];
 				}
@@ -37,19 +37,19 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				if (!mime)
 					throw `photo?`;
 				if (!/image\/(jpe?g|png)/.test(mime))
-					throw `Mime ${mime} tidak support`;
+					throw `Pic ${mime} Not Supported`;
 				else conn.recolor[m.sender] = true;
 				m.reply(wait);
 				let img = await q.download?.();
 				let error;
 				try {
 					const This = await processing(img, "recolor");
-					conn.sendFile(m.chat, This, "", "Nih...", m);
+					conn.sendFile(m.chat, This, "", "Jawn Here Is Your Order 😽😹", m);
 				} catch (er) {
 					error = true;
 				} finally {
 					if (error) {
-						m.reply("Proses Gagal :(");
+						m.reply("WTF Process Failed 🥲:(");
 					}
 					delete conn.recolor[m.chat];
 				}
@@ -63,19 +63,19 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 				if (!mime)
 					throw `photo?`;
 				if (!/image\/(jpe?g|png)/.test(mime))
-					throw `Mime ${mime} tidak support`;
+					throw `Pic ${mime} Not Supported`;
 				else conn.hdr[m.sender] = true;
 				m.reply(wait);
 				let img = await q.download?.();
 				let error;
 				try {
 					const This = await processing(img, "enhance");
-					conn.sendFile(m.chat, This, "", "Nih...", m);
+					conn.sendFile(m.chat, This, "", "Jawn Here Is Your Order 😽😹", m);
 				} catch (er) {
 					error = true;
 				} finally {
 					if (error) {
-						m.reply("Proses Gagal :(");
+						m.reply("WTF Process Failed 🥲 :(");
 					}
 					delete conn.hdr[m.sender];
 				}
